@@ -38,7 +38,6 @@ print(distance <= radius)
 point_2 = (30, 30)
 # Если точка point_2 лежит внутри круга (radius = 42), то выведите на консоль True,
 # Или False, если точка лежит вовне круга.
-# TODO здесь ваш код
 
 distance_2 = ((point_2[0] - origin_point[0]) ** 2 + (point_2[1] - origin_point[1]) ** 2) ** .5
 print('Расстояние от точки point_2 до начала координат (0, 0) = ', distance_2)
