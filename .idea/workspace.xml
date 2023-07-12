@@ -52,7 +52,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson_001" />
+                        <option value="origin/main" />
                       </list>
                     </value>
                   </entry>
