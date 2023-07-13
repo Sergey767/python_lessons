@@ -9,8 +9,8 @@ meadow = ('клевер', 'одуванчик', 'ромашка', 'клевер'
 
 # создайте множество цветов, произрастающих в саду и на лугу
 
-garden_set = {garden[0], garden[1], garden[2], garden[3], garden[4], garden[5], garden[6]}
-meadow_set = {meadow[0], meadow[1], meadow[2], meadow[3], meadow[4], meadow[5], meadow[6]}
+garden_set = set(garden)
+meadow_set = set(meadow)
 print('множество цветов, произрастающих в саду: ', garden_set)
 print('множество цветов, произрастающих на лугу: ', meadow_set)
 
