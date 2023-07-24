@@ -23,7 +23,10 @@ point = sd.get_point(600, 400)
 draw_bubble(point, 15)
 
 # Нарисовать 10 пузырьков в ряд
-# TODO здесь ваш код
+
+for x in range(100, 1010, 100):
+    point = sd.get_point(x, 200)
+    draw_bubble(point=point, step=10)
 
 # Нарисовать три ряда по 10 пузырьков
 # TODO здесь ваш код
