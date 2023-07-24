@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import random
 
 import simple_draw as sd
 
@@ -36,6 +37,10 @@ for y in range(100, 310, 100):
         draw_bubble(point=point, step=10)
 
 # Нарисовать 100 пузырьков в произвольных местах экрана случайными цветами
-# TODO здесь ваш код
+
+for _ in range(100):
+    point = sd.random_point()
+    step = random.randint(2, 10)
+    draw_bubble(point=point, step=step)
 
 sd.pause()
