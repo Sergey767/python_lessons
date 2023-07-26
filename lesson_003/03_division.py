@@ -10,4 +10,10 @@
 
 a, b = 179, 37
 
-# TODO здесь ваш код
+i = 0
+division = a / b
+
+while i < division:
+    i += 1
+    if i == int(division):
+        print(f'Целочисленное деление {a} на {b} дает {i}')
