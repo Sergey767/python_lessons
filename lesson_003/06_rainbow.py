@@ -22,7 +22,11 @@ for color in rainbow_colors:
 # Нарисовать радугу дугами от окружности (cсм sd.circle) за нижним краем экрана,
 # поэкспериментировать с параметрами, что бы было красиво
 
-# TODO здесь ваш код
+point = sd.get_point(350, 30)
+radius = 400
 
+for color in rainbow_colors:
+    radius += 15
+    sd.circle(center_position=point, radius=radius, width=20, color=color)
 
 sd.pause()
