@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1780671-8373-4913-9c94-7e596da1b47e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson_004/01_shapes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/02_global_color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/03_shape_select.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/04_fractal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/05_snowfall.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/lecture_snippets/01_scope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/lecture_snippets/02_calls_and_defaults.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/lecture_snippets/03_arbitrary_params.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/lecture_snippets/04_recursion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/lecture_snippets/05_builtin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/practice/01_triangle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/practice/02_fractal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/practice/02_snowflake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/results/exercise_01_shapes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/results/exercise_02_global_color.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/results/exercise_03_shape_select.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/results/exercise_04_fractal_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_004/results/exercise_04_fractal_02.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_003/09_resolve_conflicts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_003/09_resolve_conflicts.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +69,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.08_smile">
-    <configuration name="05_store" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.02_snowflake">
+    <configuration name="01_triangle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -59,11 +78,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_003" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_004/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_003/05_store.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_004/practice/01_triangle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="06_rainbow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="02_fractal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,11 +99,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_003" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_004/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_003/06_rainbow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_004/practice/02_fractal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="07_wall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="02_snowflake" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +120,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_003" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_004/practice" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_003/07_wall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_004/practice/02_snowflake.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="10_store" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +162,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_002" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_004" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_002/10_store.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_004/example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.02_snowflake" />
+        <item itemvalue="Python.02_fractal" />
+        <item itemvalue="Python.01_triangle" />
+        <item itemvalue="Python.example" />
         <item itemvalue="Python.08_smile" />
-        <item itemvalue="Python.07_wall" />
-        <item itemvalue="Python.06_rainbow" />
-        <item itemvalue="Python.10_store" />
-        <item itemvalue="Python.05_store" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +247,11 @@
           <url>file://$PROJECT_DIR$/lesson_003/lecture_snippets/02_if.py</url>
           <line>7</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_004/example.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
