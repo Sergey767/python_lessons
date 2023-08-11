@@ -2,6 +2,8 @@
 
 import simple_draw as sd
 
+sd.resolution = (1200, 800)
+
 # 1) Написать функцию draw_branches, которая должна рисовать две ветви дерева из начальной точки
 # Функция должна принимать параметры:
 # - точка начала рисования,
@@ -26,22 +28,37 @@ import simple_draw as sd
 
 # можно поиграть -шрифтами- цветами и углами отклонения
 
-point_0 = sd.get_point(300, 5)
-point_1 = sd.get_point(300, 155)
-angle = 90
-length = 150
+# point_0 = sd.get_point(300, 5)
+# point_1 = sd.get_point(300, 155)
+# angle = 90
+# length = 150
+
+# def draw_branches(point, angle, length):
+#     vector = sd.get_vector(start_point=point, angle=angle, length=length)
+#     vector.draw()
+#     return vector.end_point
+#
+# next_point = draw_branches(point=point_0, angle=angle, length=length)
+# right_angle = angle - 30
+# left_angle = angle + 30
+# next_length = length * .75
+# next_point = draw_branches(point=next_point, angle=right_angle, length=next_length)
+# next_point = draw_branches(point=point_1, angle=left_angle, length=next_length)
 
 def draw_branches(point, angle, length):
+    if length < 10:
+        return
     vector = sd.get_vector(start_point=point, angle=angle, length=length)
     vector.draw()
-    return vector.end_point
+    next_point = vector.end_point
+    right_angle = angle - 30
+    left_angle = angle + 30
+    next_length = length * .75
+    draw_branches(point=next_point, angle=right_angle, length=next_length)
+    draw_branches(point=next_point, angle=left_angle, length=next_length)
 
-next_point = draw_branches(point=point_0, angle=angle, length=length)
-right_angle = angle - 30
-left_angle = angle + 30
-next_length = length * .75
-next_point = draw_branches(point=next_point, angle=right_angle, length=next_length)
-next_point = draw_branches(point=point_1, angle=left_angle, length=next_length)
+root_point = sd.get_point(300, 30)
+draw_branches(point=root_point, angle=90, length=100)
 
 # 4) Усложненное задание (делать по желанию)
 # - сделать рандомное отклонение угла ветвей в пределах 40% от 30-ти градусов
