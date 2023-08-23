@@ -10,5 +10,12 @@ def draw_rainbow():
     radius = 900
 
     for color in rainbow_colors:
+        sd.start_drawing()
         radius += 15
+        sd.circle(center_position=point, radius=radius, width=20, color=sd.background_color)
         sd.circle(center_position=point, radius=radius, width=20, color=color)
+        if radius > 990:
+            radius = 900
+            continue
+        sd.finish_drawing()
+        sd.sleep(0.05)

@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1780671-8373-4913-9c94-7e596da1b47e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/airplane.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/brick_house.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/earth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/rainbow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/smile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/snowfall.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/sun.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson_005/package_rendering/tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_005/04_painting.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_005/04_painting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_005/package_rendering/rainbow.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_005/package_rendering/rainbow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_005/package_rendering/smile.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_005/package_rendering/smile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_005/package_rendering/snowfall.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_005/package_rendering/snowfall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_005/package_rendering/sun.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_005/package_rendering/sun.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

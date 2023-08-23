@@ -28,15 +28,18 @@ from package_rendering.airplane import draw_airplane
 # пример см. lesson_005/results/04_painting.jpg
 # Приправить своей фантазией по вкусу (коты? коровы? люди? трактор? что придумается)
 
+draw_earth()
 draw_wall()
-draw_rainbow()
-draw_sun()
-draw_airplane()
-draw_smile(x=750, y=230, color=sd.COLOR_GREEN)
 root_point = sd.get_point(1000, 30)
 draw_branches(point=root_point, angle=90, length=80)
-draw_earth()
-draw_snowfall()
+draw_airplane()
+while True:
+    draw_sun()
+    draw_smile(x=750, y=230, color=sd.COLOR_GREEN)
+    draw_rainbow()
+    draw_snowfall()
+    if sd.user_want_exit():
+        break
 
 # Усложненное задание (делать по желанию)
 # Анимировать картину.
