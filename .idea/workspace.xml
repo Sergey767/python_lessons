@@ -7,7 +7,6 @@
     <list default="true" id="d1780671-8373-4913-9c94-7e596da1b47e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_006/python_snippets/04_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_006/python_snippets/04_practice.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_006/python_snippets/math.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_006/python_snippets/my_module_math.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_006/python_snippets/nim_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_006/python_snippets/nim_engine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

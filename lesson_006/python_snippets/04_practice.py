@@ -34,9 +34,12 @@ while True:
     cprint('Ход игрока {}'.format(user_number), color=user_color)
     pos = input(colored('Откуда берем? ', color=user_color))
     qua = input(colored('Сколько берём? ', color=user_color))
-    take_from_bunch(position=int(pos), quantity=int(qua))
+    step_successed = take_from_bunch(position=int(pos), quantity=int(qua))
     if is_gameover():
         break
-    user_number = 2 if user_number == 1 else 1
+    if step_successed:
+        user_number = 2 if user_number == 1 else 1
+    else:
+        cprint('Невозможный ход!', color='white')
 
 cprint('Выиграл игрок номер {}'.format(user_number), color='magenta')
