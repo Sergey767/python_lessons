@@ -43,4 +43,23 @@
 # Это пример применения SOLID принципа (см https://goo.gl/GFMoaI) в архитектуре программ.
 # Точнее, в этом случае важен принцип единственной ответственности - https://goo.gl/rYb3hT
 
-# TODO здесь ваш код...
+from mastermind_engine import make_number, check_number
+from termcolor import cprint, colored
+
+quantity_attempts = 0
+indices_bulls = {}
+indices_cows = {}
+
+make_number()
+cprint('Компьютер загадал четырехзначное число', color='yellow')
+
+while len(indices_bulls) != 4:
+    user_color = 'green'
+    user_numbers = input(colored('Введите четырехзначное число c неповторяющимися цифрами: ', color=user_color))
+    indices_bulls['bulls'], indices_cows['cows'] = check_number(user_numbers=user_numbers)
+    quantity_attempts += 1
+    cprint(f'быки - {indices_bulls["bulls"]}, коровы - {indices_cows["cows"]}', color='blue')
+    if indices_bulls["bulls"] == 4:
+        break
+
+cprint(f'Количество ходов - {quantity_attempts}\nХотите ещё партию?', color='magenta')
