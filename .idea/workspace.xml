@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1780671-8373-4913-9c94-7e596da1b47e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson_006/snowfall.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_006/ai_engine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_006/02_snowfall_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_006/02_snowfall_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_006/01_mastermind.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_006/01_mastermind.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_006/mastermind_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_006/mastermind_engine.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.02_snowfall_module">
+  <component name="RunManager" selected="Python.01_mastermind">
     <configuration name="01_mastermind" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,9 +160,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.01_mastermind" />
         <item itemvalue="Python.02_snowfall_module" />
         <item itemvalue="Python.04_practice" />
-        <item itemvalue="Python.01_mastermind" />
         <item itemvalue="Python.04_painting" />
         <item itemvalue="Python.sun" />
       </list>
@@ -229,6 +230,11 @@
           <url>file://$PROJECT_DIR$/lesson_003/lecture_snippets/02_if.py</url>
           <line>7</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lesson_006/01_mastermind.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
