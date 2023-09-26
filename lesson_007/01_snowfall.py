@@ -2,16 +2,32 @@
 
 import simple_draw as sd
 
+sd.resolution = (1200, 600)
+
 # Шаг 1: Реализовать падение снежинки через класс. Внести в методы:
 #  - создание снежинки с нужными параметрами
 #  - отработку изменений координат
 #  - отрисовку
 
-
 class Snowflake:
-    pass
+    def __init__(self):
+        self.y = 500
+        self.x = 100
+        self.point = None
 
-    # TODO здесь ваш код
+    def clear_previous_picture(self):
+        sd.clear_screen()
+
+    def move(self):
+        self.y -= 10
+        self.x += 20
+
+    def draw(self):
+        self.point = sd.get_point(self.x, self.y)
+        sd.snowflake(center=self.point, length=50)
+
+    def can_fall(self):
+        return self.y
 
 
 flake = Snowflake()
