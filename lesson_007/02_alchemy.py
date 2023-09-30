@@ -7,9 +7,13 @@
 #   Вода + Воздух = Шторм
 #   Вода + Огонь = Пар
 #   Вода + Земля = Грязь
+#   Вода + Камень = Галечник
 #   Воздух + Огонь = Молния
 #   Воздух + Земля = Пыль
+#   Воздух + Камень = Песок
 #   Огонь + Земля = Лава
+#   Огонь + Камень = Металл
+#   Камень + Земля = Грунт
 
 # Сложение элементов реализовывать через __add__
 # Если результат не определен - то возвращать None
@@ -31,6 +35,8 @@ class Water:
             return Steam(part1=self, part2=other)
         elif isinstance(other, Earth):
             return Dirt(part1=self, part2=other)
+        elif isinstance(other, Stone):
+            return Pebble(part1=self, part2=other)
         return
 
 
@@ -46,6 +52,8 @@ class Air:
             return Lightning(part1=self, part2=other)
         elif isinstance(other, Earth):
             return Dust(part1=self, part2=other)
+        elif isinstance(other, Stone):
+            return Sand(part1=self, part2=other)
         return
 
 
@@ -70,6 +78,8 @@ class Fire:
             return Lightning(part1=self, part2=other)
         elif isinstance(other, Earth):
             return Lava(part1=self, part2=other)
+        elif isinstance(other, Stone):
+            return Metal(part1=self, part2=other)
         return
 
 
@@ -94,6 +104,8 @@ class Earth:
             return Dust(part1=self, part2=other)
         elif isinstance(other, Fire):
             return Lava(part1=self, part2=other)
+        elif isinstance(other, Stone):
+            return Priming(part1=self, part2=other)
         return
 
 
@@ -143,3 +155,66 @@ print(Fire(), '+', Earth(), '=', Fire() + Earth())
 # Усложненное задание (делать по желанию)
 # Добавить еще элемент в игру.
 # Придумать что будет при сложении существующих элементов с новым.
+
+
+class Stone:
+    def __str__(self):
+        return 'Камень'
+
+    def __add__(self, other):
+        if isinstance(other, Water):
+            return Pebble(part1=self, part2=other)
+        if isinstance(other, Air):
+            return Sand(part1=self, part2=other)
+        if isinstance(other, Fire):
+            return Metal(part1=self, part2=other)
+        if isinstance(other, Earth):
+            return Priming(part1=self, part2=other)
+        return
+
+
+class Pebble:
+
+    def __init__(self, part1, part2):
+        self.part1 = part1
+        self.part2 = part2
+
+    def __str__(self):
+        return 'Галечник'
+
+
+class Sand:
+
+    def __init__(self, part1, part2):
+        self.part1 = part1
+        self.part2 = part2
+
+    def __str__(self):
+        return 'Песок'
+
+
+class Metal:
+
+    def __init__(self, part1, part2):
+        self.part1 = part1
+        self.part2 = part2
+
+    def __str__(self):
+        return 'Металл'
+
+
+class Priming:
+
+    def __init__(self, part1, part2):
+        self.part1 = part1
+        self.part2 = part2
+
+    def __str__(self):
+        return 'Грунт'
+
+
+print(Water(), '+', Stone(), '=', Water() + Stone())
+print(Air(), '+', Stone(), '=', Air() + Stone())
+print(Fire(), '+', Stone(), '=', Fire() + Stone())
+print(Stone(), '+', Earth(), '=', Stone() + Earth())
+print(Earth(), '+', Stone(), '=', Earth() + Stone())
