@@ -70,7 +70,8 @@ class Man:
     def take_cat(self, cat, house):
         self.cat = cat
         self.cat.house = house
-        cprint('{} Подобрал кота'.format(self.name), color='grey')
+        cprint('{} Подобрал кота {}'.format(
+            self.name, self.cat.name), color='grey')
 
     def act(self):
         if self.fullness <= 0:
@@ -114,23 +115,30 @@ citizens = [
     Man(name='Кенни'),
 ]
 
-
 my_sweet_home = House()
 for citisen in citizens:
     citisen.go_to_the_house(house=my_sweet_home)
 
-barsik_cat = Cat(name='Барсик')
-citizens[randint(0, 2)].take_cat(cat=barsik_cat, house=my_sweet_home)
+cats = {
+    0: Cat(name='Мурзик'),
+    1: Cat(name='Черника'),
+    2: Cat(name='Борис'),
+}
+
+for number_cat, cat in cats.items():
+    citizens[number_cat].take_cat(cat=cat, house=my_sweet_home)
 
 for day in range(1, 366):
     print('================ день {} =================='.format(day))
     for citisen in citizens:
         citisen.act()
-    barsik_cat.act()
+    for cat in cats.values():
+        cat.act()
     print('--- в конце дня ---')
     for citisen in citizens:
         print(citisen)
-    print(barsik_cat)
+    for cat in cats.values():
+        print(cat)
     print(my_sweet_home)
 
 # Создадим двух людей, живущих в одном доме - Бивиса и Батхеда
