@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from random import randint
+from termcolor import cprint
 
 # Доработать практическую часть урока lesson_007/python_snippets/08_practice.py
 
@@ -25,7 +26,46 @@ from random import randint
 
 # Человеку и коту надо вместе прожить 365 дней.
 
-# TODO здесь ваш код
+
+class Cat:
+    def __init__(self, name):
+        self.name = name
+        self.fullness = 30
+        self.house = None
+
+    def __str__(self):
+        return 'Я кот - {}, сытость {}'.format(
+            self.name, self.fullness)
+
+    def sleep(self):
+        cprint('{} кот спит'.format(self.name), color='green')
+        self.fullness -= 10
+
+    def eat(self):
+        if self.house.cat_food >= 10:
+            cprint('{} кот поел'.format(self.name), color='yellow')
+            self.fullness += 20
+            self.house.cat_food -= 10
+        else:
+            cprint('{} кот нет еды'.format(self.name), color='red')
+
+    def tear_wallpaper(self):
+        cprint('{} кот дерет обои'.format(self.name), color='green')
+        self.fullness -= 10
+        self.house.dirt += 5
+
+    def act(self):
+        if self.fullness <= 0:
+            cprint('{} кот умер...'.format(self.name), color='red')
+            return
+        instinct = randint(1, 2)
+        if self.fullness < 20:
+            self.eat()
+        elif instinct == 1:
+            self.sleep()
+        else:
+            self.tear_wallpaper()
+
 
 # Усложненное задание (делать по желанию)
 # Создать несколько (2-3) котов и подселить их в дом к человеку.

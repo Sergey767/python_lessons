@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d1780671-8373-4913-9c94-7e596da1b47e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_007/02_alchemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_007/02_alchemy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_007/03_man_ans_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_007/man_ans_cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_007/python_snippets/08_practice.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_007/python_snippets/practice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +47,17 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/sergey_goryachev/Desktop/homeworkPython/lesson_007&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sergey_goryachev/Desktop/homeworkPython/lesson_007/python_snippets&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson_007/python_snippets" />
       <recent name="$PROJECT_DIR$/lesson_007" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.02_alchemy">
+  <component name="RunManager" selected="Python.practice">
     <configuration name="01_snowfall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02_snowflake" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="man_ans_cat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_004/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_007" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_004/practice/02_snowflake.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_007/man_ans_cat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,7 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="snowfall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="homeworkPython" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -148,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_006" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lesson_007/python_snippets" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_006/snowfall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lesson_007/python_snippets/practice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.02_alchemy" />
+        <item itemvalue="Python.practice" />
+        <item itemvalue="Python.man_ans_cat" />
         <item itemvalue="Python.01_snowfall" />
+        <item itemvalue="Python.02_alchemy" />
         <item itemvalue="Python.02_snowfall_module" />
-        <item itemvalue="Python.snowfall" />
-        <item itemvalue="Python.02_snowflake" />
       </list>
     </recent_temporary>
   </component>

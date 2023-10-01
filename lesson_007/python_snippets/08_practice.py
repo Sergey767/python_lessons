@@ -9,6 +9,7 @@ from random import randint
 # Если сытость < 0 единиц, человек умирает.
 # Человеку надо прожить 365 дней.
 from termcolor import cprint
+from lesson_007.man_ans_cat import Cat
 
 
 class Man:
@@ -17,6 +18,7 @@ class Man:
         self.name = name
         self.fullness = 50
         self.house = None
+        self.cat = None
 
     def __str__(self):
         return 'Я - {}, сытость {}'.format(
@@ -32,7 +34,7 @@ class Man:
 
     def work(self):
         cprint('{} сходил на работу'.format(self.name), color='blue')
-        self.house.money += 50
+        self.house.money += 150
         self.fullness -= 10
 
     def watch_MTV(self):
@@ -47,22 +49,44 @@ class Man:
         else:
             cprint('{} деньги кончились!'.format(self.name), color='red')
 
+    def buy_cat_food(self):
+        if self.house.money >= 50:
+            cprint('{} купил еды коту'.format(self.name), color='magenta')
+            self.house.money -= 50
+            self.house.cat_food += 50
+        else:
+            cprint('{} деньги кончились!'.format(self.name), color='red')
+
+    def clean_the_house(self):
+        cprint('{} убрался дома'.format(self.name), color='white')
+        self.house.dirt -= 100
+        self.fullness -= 20
+
     def go_to_the_house(self, house):
         self.house = house
         self.fullness -= 10
-        cprint('{} Вьехал в дом'.format(self.name), color='cyan')
+        cprint('{} Въехал в дом'.format(self.name), color='cyan')
+
+    def take_cat(self, cat, house):
+        self.cat = cat
+        self.cat.house = house
+        cprint('{} Подобрал кота'.format(self.name), color='grey')
 
     def act(self):
         if self.fullness <= 0:
             cprint('{} умер...'.format(self.name), color='red')
             return
         dice = randint(1, 6)
-        if self.fullness < 20:
+        if self.fullness < 30:
             self.eat()
-        elif self.house.food < 10:
+        elif self.house.food < 30:
             self.shopping()
         elif self.house.money < 50:
             self.work()
+        elif self.house.cat_food < 20:
+            self.buy_cat_food()
+        elif self.house.dirt >= 100:
+            self.clean_the_house()
         elif dice == 1:
             self.work()
         elif dice == 2:
@@ -75,11 +99,13 @@ class House:
 
     def __init__(self):
         self.food = 50
+        self.cat_food = 0
         self.money = 0
+        self.dirt = 0
 
     def __str__(self):
-        return 'В доме еды осталось {}, денег осталось {}'.format(
-            self.food, self.money)
+        return 'В доме еды осталось {}, денег осталось {}, кошачьей еды осталось {}, грязи осталось {}'.format(
+            self.food, self.money, self.cat_food, self.dirt)
 
 
 citizens = [
@@ -93,13 +119,18 @@ my_sweet_home = House()
 for citisen in citizens:
     citisen.go_to_the_house(house=my_sweet_home)
 
+barsik_cat = Cat(name='Барсик')
+citizens[randint(0, 2)].take_cat(cat=barsik_cat, house=my_sweet_home)
+
 for day in range(1, 366):
     print('================ день {} =================='.format(day))
     for citisen in citizens:
         citisen.act()
+    barsik_cat.act()
     print('--- в конце дня ---')
     for citisen in citizens:
         print(citisen)
+    print(barsik_cat)
     print(my_sweet_home)
 
 # Создадим двух людей, живущих в одном доме - Бивиса и Батхеда
